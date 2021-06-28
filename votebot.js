@@ -1,37 +1,25 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'PLACEHOLDER'; // Token hierher
+const token = 'PLACEHOLDER'; // Token 
 
 bot.login(token); // login the bot with your token.
 
 bot.on('message', message => {
-    if (message.attachments = true) {
-        message.react(':upvote:665319797894152203')
-        message.react(':downvote:665319859294568498')
+    if (message.channel.id === 'PLACEHOLDER') {  // Channel ID 
+        message.react('👍')
+        message.react('👎')
     }
 
     if (message.content.toLowerCase() === "-info")
     {   
-        message.channel.send("Hello there")
+        message.channel.send("Hello there. I am VoteBot and I will add up/downvote reactions messages.")
     }
-    if (message.content.toLowerCase() === "ping")
-    {   
-        message.channel.send("pong! Gotchu fam")
-    }
-    if (message.content.toLocaleLowerCase() === "!bottest")
+    if (message.content.toLocaleLowerCase() === "-bottest")
     { 
         message.channel.send("I am up, running and self aware!")
     }
-    if (message.content.toLocaleLowerCase() === "!votebot")
-    {   
-        message.channel.send("Hello. I am VoteBot and I will add up/downvote reactions to pictures")
-    }
-    if (message.content.toLocaleLowerCase() === "!votehelp")
+    if (message.content.toLocaleLowerCase() === "-votehelp")
     {    
-        message.channel.send("Am I not working? DM MrMuffin#9103 for assistance.")
-    }
-    if (message.content.toLocaleLowerCase() === "I fucking love you VoteBot")
-    {
-        message.channel.send("Love you too <3")
+        message.channel.send("Something not working? DM MrMuffin#9103 for assistance. Commands are: -info ; -bottest ; -votehelp")
     }
 })
