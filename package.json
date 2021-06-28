@@ -1,0 +1,17 @@
+{
+  "name": "Votebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot2.js"
+  },
+  "keywords": [],
+  "author": "Helloilikemuffins",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^12.1.1",
+    "winston": "^3.2.1"
+  }
+}

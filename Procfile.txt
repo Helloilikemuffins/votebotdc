@@ -1,0 +1,2 @@
+worker: node bot2.js 
+npm start -Dserver.port=$PORT
